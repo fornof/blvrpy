@@ -1,10 +1,11 @@
 Hello there, 
 to run this , you will need to install pip for blender
 https://blender.stackexchange.com/questions/56011/how-to-use-pip-with-blenders-bundled-python
-
+### Note on admin rights
+if you are on windows and it says there is no permissions, run cmd, git bash, powershell, or whatever shell you are using as administrator. You can also set permissions on the root Blender Foundation folder to allow read/write.  Otherwise, copy Blender to a folder where you do have permissions.
 Next you wil need to install the requirements 
 ```
-pip install -R requirements.txt
+pip install -r requirements.txt
 ```
 
 or  ```pip install pyzmq  ``` 
