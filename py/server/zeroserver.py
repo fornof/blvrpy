@@ -47,7 +47,7 @@ def send_json(rotation=None, location=None,keys=None):
             pass 
         
         if rotation != None:    
-            data["rotation_quaternion"] = "(" + str(rotation.w) +","+str(rotation.x) +"," + str(rotation.y) +"," + str(rotation.z)+")" 
+            data["rotation_quaternion"] = "(" + str(rotation.w) +","+str(rotation.x) +"," + str(rotation.z) +"," + str(rotation.y*-1)+")" 
         
         stringer = json.dumps(data)
         return stringer
